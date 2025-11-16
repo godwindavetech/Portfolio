@@ -1,0 +1,448 @@
+<!DOCTYPE html><html><head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>update</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/featherlight.min.css">
+<link rel="stylesheet" href="css/all.css" crossorigin="anonymous">
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.min.js"></script>
+<script src="js/jquery.resmenu.min.js"></script>
+<script src="js/getyear.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/featherlight.min.js"></script>
+<script>
+$(window).ready(function () {
+	$('#topnav').ReSmenu({ maxWidth: 767 });
+});
+</script>
+<script>
+$(document).ready(function () {
+    "use strict";
+	var myNav = {
+		init: function () {
+			this.cacheDOM();
+			this.browserWidth();
+			this.bindEvents();
+		},
+		cacheDOM: function () {
+			this.navBars = $(".navBars");
+			this.toggle = $("#toggle");
+			this.navMenu = $(".header_top");
+		},
+		browserWidth: function () {
+			$(window).resize(this.bindEvents.bind(this));
+		},
+		bindEvents: function () {
+			var width = window.innerWidth;
+
+			if (width < 1023) {
+				this.navBars.click(this.animate.bind(this));
+				this.navMenu.hide();
+				this.toggle[0].checked = false;
+			} else {
+				this.resetNav();
+			}
+		},
+		animate: function (e) {
+			var checkbox = this.toggle[0];
+
+			if (!checkbox.checked) {
+				this.navMenu.slideDown();
+			} else {
+				this.navMenu.slideUp();
+			}
+
+		},
+		resetNav: function () {
+			this.navMenu.show();
+		}
+	};
+	myNav.init();
+});
+</script>
+<style type="text/css">
+.featherlight-content {
+height: 75vw;
+width: 75vw;
+}
+
+.pagenav a {background-color:#fffcf9; border-radius:3px; -webkit-border-radius:3px; height:32px; float:none; display: inline-block;
+line-height:32px; min-width:30px; color:#000000; text-align:center; border:1px solid #595858; text-decoration:none; border-collapse:separate}
+
+.pagenav a:hover {color:#999999; background-color:#000000; border-radius:3px; -webkit-border-radius:3px; text-decoration:none; }
+
+.current {min-width:30px;line-height:32px;float:none; display: inline-block;
+ font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold;color:#fff; background-color:#000000; border-radius:3px;
+ -webkit-border-radius:3px;  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;box-sizing: border-box; text-align:center;
+ }
+
+.trailerlink{
+     font-size: 24px;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 56px;
+    background-color: #513086;
+    font-family: 'latobold';
+    padding-left: 13px;
+    padding-right: 13px;
+    letter-spacing: -0.05em;
+padding: 0 7px;
+}
+</style>
+<style>
+	.black{
+		text-transform: uppercase;
+		word-spacing: 2px;
+		letter-spacing: 1px;
+		text-shadow: 2px 10px 3px #999999;
+		font-size: larger;
+	}
+</style>
+<style>
+    @media (max-width: 480px){
+        .i{
+            display: none;
+        }
+    }
+  </style>
+</head>
+<body>
+<div class="header_cams">
+	<input type="checkbox" id="toggle">
+	<label class="navBars" for="toggle"><span>Live Cam Shows</span><span class="arrow"></span></label>
+</div>
+<div class="header_top">
+	<div class="centerwrap clear">
+    	<div class="nextshow">
+        	<h3>Next Live Show:</h3>
+            <iframe src="https://www.vettenationlive.com/shows/calendar/romemajor/model_text?h4_size=14px&color=ffffff&bg=transparent" scrolling="no" frameborder="0" width="100%" height="30" allowtransparency="true"></iframe>
+        </div>
+    	<div class="counter">
+            <iframe src="https://vettenationlive.com/shows/calendar/countdown?bg=transparent" width="100%" height="88" scrolling="no"></iframe>
+            <div class="country_style"><iframe src="https://www.vettenationlive.com/shows/calendar/model_text?h4_size=14px&color=ffffff&bg=transparent" scrolling="no" frameborder="0" width="100%" height="40" allowtransparency="true"></iframe></div>
+        </div>
+    </div>
+</div>
+
+<br>
+<center><a class="logo-text black i" href="index.html" style="color: #513086">BADDIES :<span style="color: whitesmoke"> ADULT COMMUNITY & ADULT VIDEO CONTENT </span></a></center>
+<br>
+
+<div class="topnav">
+	<div class="centerwrap clear">
+    	<nav>
+        	<ul id="topnav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="login.html">Members LOGIN</a></li>
+            </ul>
+        </nav>
+
+        <div class="clickme clear">
+        	<a href="blackkenaffiliate form.html" class="joinBtn">Join Affiliate!</a>
+</div>
+    </div>
+</div>
+<div class="bodyarea clear">
+	<div class="banner_video clear">
+        <div class="centerwrap">
+            <div class="logo"><a href="home.html"><img src=" " alt=""></a></div>
+            <div class="whitebox join">
+            	<div class="titlebox clear" style="display: flex;
+justify-content: space-between; flex-wrap:wrap;">
+                	<h2>Hot show Recent videos</h2>       
+                  <!---- <div class="clicktome"><a href="join.html">Subscribe to Get it ALL!</a></div>-->
+                </div>
+                <br>
+                <div class="member_welcome">
+                  <!----   <p>Pay as low as ₦100 fee and Get Access to Full Trending video Content Only For Free!</p>
+                 <p>I update my Content weekly in addition to all the show archives and live shows. You also get updates on the platform!</p>-->
+				<!----<p>Check out my most recent updates!</p> <p> Don't forget to Subscribe for free Trending video Content Only!</p>-->
+                </div>
+             
+                <br>  
+         
+                <div class="updated_videos clear"><script type="text/javascript" src="js/afterglow.min.js"></script><div class="videoarea clear">
+
+                              <!--update video1-->
+                        <h3 style="color: floralwhite;">New Video Added: Sweettooth</h3>
+
+                        <p class="date">May 9th 2025</p>
+                        <div class="videos clear">
+<a href="#1">
+                            <div class="video_pic"><img src="Recentimg/sweettooth.jpg" alt=""></div>
+                            <div class="video_pic"><img src="Recentimg/sweettooth.jpg" alt=""></div>
+                            <div class="video_pic last"><img src="Recentimg/sweettooth.jpg" alt=""></div>
+</a>
+                        </div>
+                <div style="text-align:right">
+ 
+                    <a class="afterglow trailerlink vjs-fluid" href="#trailer">View video</a>
+                    <video id="trailer" width="960" height="540" data-volume=".5" class="video-js" responsive="false" fluid="true" data-autoresize="false">
+                      <source type="video/mp4" src="Recentvideos/sweettooth_720p.mp4">
+                    </video>
+		</div>
+                        <div class="video_details clear">
+
+                            <p>  Check out this video with over 28 minutes of action. Salute.</p>
+
+           <!----                
+<p style="color:#d4001e !important; font-weight:bold;"> <span onclick="addtocart(38202," v")"="" style="cursor: pointer;">Buy the full clip for ₦100 </span> or <a style="color:#d4001e !important;font-weight:bold;" href=" ">Subscribe to Get it ALL!</a></p> <p>
+</p><div onclick="addtocart(38202," v")"="" href="join.html" style="background-color: #d4001e;
+font-size: 28px;
+color: #010101;
+display: block;
+height: 65px;
+line-height: 65px;
+font-weight: bold;
+padding: 0 25px; display:unset !important;cursor: pointer;"><a href="www.go" style="color: black;"> ADD TO CART  <i class="fas fa-shopping-cart"></i></a> </div>
+---->
+                       <div class="video_download"><a href="vv/bbw.mp4" download="" >Download</a></div>
+                        </div>
+                    </div>
+<div class="videoarea clear">
+
+                        
+                                        <!--update video2-->
+                                  <h3 style="color: floralwhite;">New Video Added</h3>
+
+                        <p class="date">May 2nd 2025</p>
+                        <div class="videos clear">
+<a href="#1">
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic last"><img src=" " alt=""></div>
+</a>
+                        </div>
+                <div style="text-align:right">
+ 
+		<a class="afterglow trailerlink vjs-fluid" href="#trailer2">View video</a>
+    	<video id="trailer2" width="960" height="540" data-volume=".5" class="video-js" responsive="false" fluid="true" data-autoresize="false">
+      	<source type="video/mp4" src=" ">
+    	</video>
+		</div>
+                        <div class="video_details clear">
+                        
+                            <p>  Check out this video with over 2 minutes of action. Salute.</p>
+    <!----                       
+<p style="color:#d4001e !important; font-weight:bold;"><span onclick="addtocart(38189," v")"="" style="cursor: pointer;">Buy the full clip for ₦100 </span> or <a style="color:#d4001e !important;font-weight:bold;" href="join.html">Subscribe to Get it ALL!</a></p><p>
+</p><div onclick="addtocart(38189," v")"="" href="join.html" style="background-color: #d4001e;
+font-size: 28px;
+color: #010101;
+display: block;
+height: 65px;
+line-height: 65px;
+font-weight: bold;
+padding: 0 25px; display:unset !important;cursor: pointer;"><a href="www.go" style="color: black;">ADD TO CART  <i class="fas fa-shopping-cart"></i></a> </div>
+---->
+                         <div class="video_download"><a href=" " download="">Download</a></div> 
+                        </div>
+                    </div>
+<div class="videoarea clear">
+
+                       
+                                                            
+                                  <!--update video3-->
+                             <h3 style="color: floralwhite;">New Video Added</h3>
+                        <p class="date">April 25th 2025</p>
+                        <div class="videos clear">
+<a href="#1">
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic last"><img src=" " alt=""></div>
+</a>
+                        </div>
+                <div style="text-align:right">
+ 
+		<a class="afterglow trailerlink vjs-fluid" href="#trailer3">View video</a>
+    	<video id="trailer3" width="960" height="540" data-volume=".5" class="video-js" responsive="false" fluid="true" data-autoresize="false">
+      	<source type="video/mp4" src=" ">
+    	</video>
+		</div>
+                        <div class="video_details clear">
+                          
+                            <p>  Check out this video with over 28 minutes of action. Salute.</p>
+   <!----                         
+<p style="color:#d4001e !important; font-weight:bold;"><span onclick="addtocart(38177," v")"="" style="cursor: pointer;">Buy the clip for ₦100 </span> or <a style="color:#d4001e !important;font-weight:bold;" href="join.html">Subscribe to Get it ALL!</a></p><p>
+</p><div onclick="addtocart(38177," v")"="" href="join.html" style="background-color: #d4001e;
+font-size: 28px;
+color: #010101;
+display: block;
+height: 65px;
+line-height: 65px;
+font-weight: bold;
+padding: 0 25px; display:unset !important;cursor: pointer;"><a href="www.go" style="color: black;">ADD TO CART  <i class="fas fa-shopping-cart"></i></a> </div>
+---->
+                        <div class="video_download"><a href=" " download="">Download</a></div> 
+                        </div>
+                    </div>
+<div class="videoarea clear">
+
+
+                      
+                         <!--update video4-->
+      <h3 style="color: floralwhite;">New Video Added</h3>
+                        <p class="date">April 18th 2025</p>
+                        <div class="videos clear">
+<a href="#1">
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic last"><img src=" " alt=""></div>
+</a>
+                        </div>
+                <div style="text-align:right">
+ 
+		<a class="afterglow trailerlink vjs-fluid" href="#trailer4">View video</a>
+    	<video id="trailer4" width="960" height="540" data-volume=".5" class="video-js" responsive="false" fluid="true" data-autoresize="false">
+      	<source type="video/mp4" src=" ">
+    	</video>
+		</div>
+                        <div class="video_details clear">
+                       
+                            <p> Check out this video with over 28 minutes of action. Salute.</p>
+    <!-----                    
+<p style="color:#d4001e !important; font-weight:bold;"><span onclick="addtocart(38163," v")"="" style="cursor: pointer;">Buy the clip for ₦100 </span> or <a style="color:#d4001e !important;font-weight:bold;" href="join.html">Subscribe to Get it ALL!</a></p><p>
+</p><div onclick="addtocart(38163," v")"="" href="join.html" style="background-color: #d4001e;
+font-size: 28px;
+color: #010101;
+display: block;
+height: 65px;
+line-height: 65px;
+font-weight: bold;
+padding: 0 25px; display:unset !important;cursor: pointer;"><a href="" style="color: black;"> ADD TO CART  <i class="fas fa-shopping-cart"></i></a> </div>
+---->
+                       <div class="video_download"><a href=" " download="">Download</a></div> 
+                        </div>
+                    </div>
+<div class="videoarea clear">
+
+                     
+                        <!--update video5-->
+                        <h3 style="color: floralwhite;">New Video Added</h3>
+                        <p class="date">April 11th 2025</p>
+                        <div class="videos clear">
+<a href="#1">
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic"><img src=" " alt=""></div>
+                            <div class="video_pic last"><img src=" " alt=""></div>
+</a>
+                        </div>
+                <div style="text-align:right">
+ 
+		<a class="afterglow trailerlink vjs-fluid" href="#trailer5">View video</a>
+    	<video id="trailer5" width="960" height="540" data-volume=".5" class="video-js" responsive="false" fluid="true" data-autoresize="false">
+      	<source type="video/mp4" src=" ">
+    	</video>
+		</div>
+                        <div class="video_details clear">
+                         
+                            <p> Check out this video with over 28 minutes of action. Salute.</p>
+     <!----                   
+<p style="color:#d4001e !important; font-weight:bold;"><span onclick="addtocart(38145," v")"="" style="cursor: pointer;">Buy the clip for ₦100 </span> or  <a style="color:#d4001e !important;font-weight:bold;" href="join.html">Subscribe to Get it ALL!</a></p><p>
+</p><div onclick="addtocart(38145," v")"="" href="join.html" style="background-color: #d4001e;
+font-size: 28px;
+color: #010101;
+display: block;
+height: 65px;
+line-height: 65px;
+font-weight: bold;
+padding: 0 25px; display:unset !important;cursor: pointer;"><a href="www.go" style="color: black;"> ADD TO CART  <i class="fas fa-shopping-cart"></i></a> </div>
+--->
+                         <div class="video_download"><a href=" " download="">Download</a></div> 
+                        </div>
+                    </div>
+</div>
+             
+
+<br>   
+<center>
+    <div class="pagenav"><span class="current" style="margin:5px;">1</span><a href="update2.html" style="margin:5px;">2</a>  <a href="update3.html" style="margin:5px;">3</a> </div></center>  <br>     
+
+<br>    
+               
+            </div>
+        
+
+            <footer>
+                <div class="mail_list clear">
+                    <div class="warning_fmodel"><img src="images/footer.png" alt=""></div>
+                    <div class="mail_listarea">
+                        <h3>Join mailing list for free clips and hot pics approx 2 times per month!</h3>
+                        <div class="email_subscribe">
+                            <form method="post" action="https://formsubmit.co/69f8b710d8ffe4e8965c97902fcedc8f"  role="form">
+                            <input type="hidden" name="_subject" value="New submission Newsletter form! form amehmichaeldev.github.io/Baddiesmobile">
+                            <input type="hidden" name="_next" value="https://amehmichaeldev.github.io/Baddiesmobile">
+                            <input type="hidden" name="_captcha" value="false">	
+                         <p><span class="required">*</span>�Your Email Address: </p>
+                            <input type="email" name="email"  id="email" value="" class="email_subscribebox" size="20">
+                    
+                            <input type="submit" value="Subscribe" class="submit">
+                                                  </form>
+                           <p>By subscribing, you will receive mail/content from this platform. Please read our privacy policy <a href="privacypolicy.html" style="text-decoration:none;color:#FFFFFF"><u>here</u></a></p>  
+                        </div>
+                    </div>
+                </div>
+          <div class="footer clear">
+                <script language="javascript">
+        
+        var size=""; var color="";
+        
+                        </script>
+              <script language="javascript1.2">
+        
+        var isVer4Min=parseInt(navigator.appVersion) >= 4; if(navigator.appName == "Netscape" || navigator.appName == "Microsoft Internet Explorer"){ if(isVer4Min){ color=screen.colorDepth; size=screen.width; } }
+        
+                                  </script>
+           
+              <script language="javascript">
+        
+        document.write('<IMG SRC="" BORDER=0 HEIGHT=1 WIDTH=1>')
+        
+                                  </script>
+                    <p class="footer_links"><a href="index.html">Home</a> | <a href=" " target="blank">Mobile App</a> | <a href="index2.html" target="blank">2257</a> | <a href="form.html">Report Content</a>
+              </p>
+                     <p class="copyright">�COPYRIGHT <span class="year"></span> Baddies </p>
+                   <div class="vna_logo"><img src="images/comodo.png" alt="" width="80px;"></div> 
+                   
+          </div>
+        </footer>
+        <script type="text/javascript">
+        
+                    function CheckMultiple1424(frm, name) {
+                        for (var i=0; i < frm.length; i++)
+                        {
+                            fldObj = frm.elements[i];
+                            fldId = fldObj.id;
+                            if (fldId) {
+                                var fieldnamecheck=fldObj.id.indexOf(name);
+                                if (fieldnamecheck != -1) {
+                                    if (fldObj.checked) {
+                                        return true;
+                                    }
+                                }
+                            }
+                        }
+                        return false;
+                    }
+                function CheckForm1424(f) {
+                    var email_re = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i;
+                    if (!email_re.test(f.email.value)) {
+                        alert("Please enter your email address.");
+                        f.email.focus();
+                        return false;
+                    }
+        
+                        return true;
+                    }
+                
+        // ]]>
+        </script>
+
+<script src="js/store.js"></script>
+
+</div></div></div></body></html>
